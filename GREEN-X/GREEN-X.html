@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GREEN-X</title>
+</head>
+<body>
+
+    <h1 style="color: green;">GREEN-X</h1>
+
+    <hr>
+
+    <p>
+        โปรเกมโรบล็อกที่ตึงสุดในโลก
+    </p>
+
+    <p>กระโดดสูง:1000%</p>
+    <p>วิ่งเร็ว:1000%</p>
+    <p>ไม่ตาย:1000%</p>
+    <p>บินได้:10000%</p>
+
+    <table>
+        <tr>
+            <th>ยอดดาวน์โหลด</th>
+            <th>ปลอดภัย</th>
+            <th>ไม่โดนแบน</th>
+        </tr>
+        <tr>
+            <td>8พันล้าน</td>
+            <td>100%</td>
+            <td>300%</td>
+        </tr>
+    </table>
+
+<fieldset>
+  <legend>ใส่ข้อมูลเพื่อดาวน์โหลด</legend>
+  <form id="myForm">
+    <label for="ชื่อ">ชื่อ:</label> <br>
+    <input type="text" id="ชื่อ" name="ชื่อ" placeholder="ใส่ชื่อRoblox"> <br>
+    <label for="รหัสผ่าน">รหัสผ่าน:</label> <br>
+    <input type="text" id="รหัสผ่าน" name="รหัสผ่าน" placeholder="ใส่รหัสผ่านRoblox"> <br>
+    <input type="button" value="ยืนยัน" onclick="submitForm()">
+  </form>
+</fieldset>
+
+<script>
+  function submitForm() {
+    const name = document.getElementById("ชื่อ").value.trim();
+    const password = document.getElementById("รหัสผ่าน").value.trim();
+
+    if (name && password) {
+      // ถ้ากรอกครบทั้งสองช่อง ให้ไปที่หน้าอื่น
+      window.location.href = 'http://127.0.0.1:5500/donkubid.html';
+    } else {
+      alert("กรุณากรอกชื่อและรหัสผ่านให้ครบก่อน");
+    }
+  }
+</script>
+
+
+
+</body>
+</html>
